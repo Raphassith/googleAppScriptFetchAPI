@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0, maximum-scale=0, user-scalable=no">
+    <title>Fetch APIs</title>
+</head>
+
+<body>
+    <button onclick="senddata()">Click me!</button>
+    <script>
+        function senddata() {
+            let url = "<< API URL >>?act=print";
+            let data = { roderID: "Aoo1" };
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(res => { console.log(res) })
+                .catch(error => { console.log(error) });
+        }
+    </script>
+</body>
+
+</html>
