@@ -15,7 +15,9 @@
             let url = "<< API URL >>?act=print";
             let data = { roderID: "Aoo1" };
             fetch(url, {
-                method: "POST",
+                method: 'POST',
+                redirect: 'follow',
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
                 body: JSON.stringify(data)
             })
                 .then(response => response.json())
