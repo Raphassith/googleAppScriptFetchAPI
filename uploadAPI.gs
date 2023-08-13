@@ -27,6 +27,7 @@ function doPost(e) {
 function fileUpload(rawLog, type, filename) {
   let datafile = Utilities.base64Decode(rawLog);
   let blob2 = Utilities.newBlob(datafile, type, filename);
+  // let newFile = DriveApp.getFolderById("<< Folder ID >>").createFile(blob2);
   let folder = DriveApp.getFoldersByName("<< Folder Name >>");
   let newFile = folder.next().createFile(blob2);
   let fileUrl = 'https://drive.google.com/uc?id=' + newFile.getId();
