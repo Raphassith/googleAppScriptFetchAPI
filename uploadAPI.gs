@@ -30,6 +30,6 @@ function fileUpload(rawLog, type, filename) {
   // let newFile = DriveApp.getFolderById("<< Folder ID >>").createFile(blob2);
   let folder = DriveApp.getFoldersByName("<< Folder Name >>");
   let newFile = folder.next().createFile(blob2);
-  let fileUrl = 'https://drive.google.com/uc?id=' + newFile.getId();
+  let fileUrl = 'https://lh3.googleusercontent.com/d/' + newFile.getId();
   return fileUrl;
 }
