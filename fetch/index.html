@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch App</title>
+</head>
+
+<body>
+    ID: <input type="text" id="id" /><br />
+    Name: <input type="text" id="name" /><br />
+    Score: <input type="text" id="score" /><br />
+    <button onclick="save()">Save</button>
+
+    <script src="./fetch.js"></script>
+    <script>
+        function save() {
+            let id = document.getElementById('id').value;
+            let name = document.getElementById('name').value;
+            let score = document.getElementById('score').value;
+
+            adddata(id, name, score);
+        }
+    </script>
+
+</body>
+
+</html>
