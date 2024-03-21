@@ -1,5 +1,5 @@
 function adddata(id, name, score) {
-    let apiurl = 'https://script.google.com/macros/s/AKfycbwu94qx5rJotGOqi1XyY007VTSAXVPQCx9GaXZ73LKEoLgckk4IGfZia9RvVPdJzCI/exec';
+    let apiurl = '<< API URL >>';
 
     let raw = {
         "id": id,
