@@ -32,5 +32,6 @@ function fileUpload(rawLog, type, filename) {
   let newFile = folder.next().createFile(blob2);
   let fileUrl = 'https://lh3.googleusercontent.com/d/' + newFile.getId();
   // let fileUrl = 'https://drive.usercontent.google.com/download?id=' + newFile.getId();
+  // let fileUrl = 'https://drive.google.com/uc?id=' + newFile.getId();
   return fileUrl;
 }
